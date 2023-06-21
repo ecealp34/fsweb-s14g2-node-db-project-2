@@ -14,6 +14,6 @@ const defaultCars = [
 
 
 exports.seed = async function(knex) {
-    await knex('Cars').truncate()
-    await knex('Cars').insert(defaultCars);
+    await knex('cars').truncate()
+    await knex('cars').insert(defaultCars);
   };
